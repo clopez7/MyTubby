@@ -29,5 +29,6 @@ a:hover{
     font-size: 50px;
     padding: 25px;
     font-weight: bold;
-    color:rgb(168, 144, 255);
+    text-align: center;
+    color:rgb(255, 255, 255);
 }
