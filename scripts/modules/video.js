@@ -16,9 +16,11 @@ export var videos = [
 ]
 export function displayVideos(v){
     v.forEach(function(video) {
-        console.log(video.title)
-        console.log(video.link)
         document.getElementById("video-list").innerHTML += 
-        "<article id='video-list' class='video-article'><a href='"+video.link+"'>"+video.title+"</a></article>";
+        "<article id='video-list' class='video-article'><a target='_blank' href='"+video.link+"'>"+video.title+"</a></article>";
     });  
+}
+export function appendVideo(v){
+    document.getElementById("video-list").innerHTML += 
+    "<article id='video-list' class='video-article'><a href='"+v.link+" target='_blank''>"+v.title+"</a></article>";
 }

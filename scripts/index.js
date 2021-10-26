@@ -1,3 +1,3 @@
-import  {videos, createVideo, displayVideos }   from './modules/video.js'
+import  {videos, createVideo, displayVideos, appendVideo}   from './modules/video.js'
 
 displayVideos(videos)
