@@ -47,6 +47,10 @@ a:hover{
     text-align: center;
     color:white;
 }
+.list-message{
+    color:white;
+    font-size: 50px;
+}
 
 @media (prefers-color-scheme: dark) {
     body{
