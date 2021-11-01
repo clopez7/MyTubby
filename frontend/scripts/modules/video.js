@@ -1,4 +1,4 @@
-const server = "http://localhost:3000/videos"
+const server = "http://dojo:3000/videos"
 
 export function createVideo(title, link) {
     const obj = {};

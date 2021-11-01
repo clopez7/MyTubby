@@ -1,30 +1,26 @@
-var express = require('express')
+const express = require('express')
 const app = express()
-var cors = require('cors')
-const Pool  =  require('pg').Pool;
-// const { Pool } = require('pg')
+const cors = require('cors')
+const Pool = require('pg').Pool;
 
+require('dotenv').config();
 
 const dbConfig = {
-    user: 'carlos-lopez-7e4',
-    host: 'postgresql-carlos-lopez-7e4.alwaysdata.net',
-    database: 'carlos-lopez-7e4_mytubby',
-    password: 'aY$=.Q2NqVAF<sg2J&W^&5.[ZaBZ9!}D',
-    port: 5432,
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT
 }
 
 
-const pool  =  new Pool(dbConfig);
-
-
-
-
+const pool = new Pool(dbConfig);
 
 app.use(cors())
-app.use("/",express.static("views"))
+app.use("/", express.static("views"))
 app.use(express.static("views"))
-app.use("/styles",express.static("styles"))
-app.use("/scripts",express.static("scripts"))
+app.use("/styles", express.static("styles"))
+app.use("/scripts", express.static("scripts"))
 
 
 const getVideos = (request, response) => {
