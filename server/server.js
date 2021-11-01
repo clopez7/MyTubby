@@ -13,6 +13,12 @@ const dbConfig = {
     port: process.env.DB_PORT
 }
 
+//TODO 
+
+//ENVIAR COOKIE IF LOGGED OUT, persistencia local
+
+//Only DB calls if logged in
+
 
 const pool = new Pool(dbConfig);
 
