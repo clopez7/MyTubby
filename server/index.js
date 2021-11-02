@@ -13,6 +13,8 @@ const dbConfig = {
     port: process.env.DB_PORT
 }
 
+//CREAR ID
+
 //TODO 
 
 //ENVIAR COOKIE IF LOGGED OUT, persistencia local

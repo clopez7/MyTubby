@@ -50,6 +50,8 @@ a:hover{
 .list-message{
     color:white;
     font-size: 50px;
+    font-weight: bold;
+    padding-left:10px;
 }
 
 @media (prefers-color-scheme: dark) {
