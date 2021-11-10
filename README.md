@@ -1,2 +1,4 @@
 ## MyTubby  
-Anonymous youtube lists, deployed at: https://clopez7.github.io/MyTubby/
+
+
+A simple vanilla JS project to store anonymous youtube lists 
